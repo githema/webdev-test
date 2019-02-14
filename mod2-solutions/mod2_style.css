@@ -1,90 +1,73 @@
-*{
-	box-sizing: border-box;
-	margin: 0px;
-	padding: 0px;
-}
 
-h1{
-	text-align: center;
-	font-size: 25px;
-	font-style: normal;
-	margin-bottom: 50px;
-	margin-top: 50px;
-}
-div{
-	margin-left: auto;
-	margin-right: auto;
-}
-h2{
-	padding:0px;
-	margin: 0px;
-	font-size: 15px;
-}
-p{
-	padding: 5px 10px 2px 10px;
-	margin: 30px 5px 10px 5px;
-}
-section{
-	background-color: gray;
-	margin: 10px;
-	padding: 0px;
-	border: 1px solid black; 
-	overflow: auto;
-	float: left;
-	position: relative;
-}
-
-#Chicken{
-	background-color: pink;
-	float: right;
-	text-align: center;
-	width: 100px;
-	border: 1px solid black;
-	margin: 0px;
-	padding: 2px 10px 2px 10px;
-}
-#Beef{
-	background-color: maroon;
-	color: white;
-	float: right;
-	text-align: center;
-	width: 100px;
-	border: 1px solid black;
-	margin: 0px;
-	padding: 2px 10px 2px 10px;
-}
-#Sushi{
-	background-color: yellow;
-	float: right;
-	text-align: center;
-	width: 100px;
-	border: 1px solid black;
-	margin: 0px;
-	padding: 2px 10px 2px 10px;
-}
-.row{
-	width: 100%;
-}
-
-@media (min-width: 992px){
-	.col-lg-4{
+	* {
+		box-sizing: border-box;
+		margin: 0px;
+		padding: 0px;
+		}
+	h1 {
+		margin-bottom: 15px;
+		margin-top: 15px;
+		text-align: center;
+	}
+	.container {
+		background-color: gray;
+		width: 90%;
+		height: 250px;
+		position: relative;
+		padding: 0px, 10px, 10px, 10px;
+		margin: 10px;
+		border: 2px solid black;
+		font-style: italic;
+		overflow: auto;
+	}
+	h2 {
+  	position: relative; 
+  	overflow: auto ; 
+  	border: 2px solid black;
+  	margin-top: 0;
+  	margin-left: 60%;
+  	top: 0px;
+  	right: 0px;
+  	font-weight: bold;
+  	text-align: center; 
+  	font-style: italic;
+    }
+	p {
+		width: 90%;
+		margin-left: 10px;
+		position: relative;
+		overflow: auto;
+	}
+	#Chicken {
+		background-color: pink;
+	}
+	#Beef {
+		background-color: maroon;
+		color: white;
+	}
+	#Sushi {
+		background-color: yellow;
+	}
+	/*simple responsive framework*/
+	.row {
+		width: 100%;
+		
+	}
+	/********Large device only********/
+	@media (min-width: 992px){
+	.col-lg-4 {
 		float: left;
 		width: 33.33%;
 	}
-}
-@media (min-width: 768px) and (max-width: 991px){
-	.col-md-6{
+    }
+    /********medium device only********/
+	@media (min-width: 768px) and (max-width: 991px){
+	.col-md-6 {
 		float: left;
-		width:50%;
+		width: 50%;
 	}
-	.col-md-12{
+	.col-md-12 {
 		float: left;
-		width:100%;
+		width: 100%;
 	}
-}
-@media (max-width: 767px){
-	.col-sm-12{
-		float: left;
-		width:100%;
 	}
-}
