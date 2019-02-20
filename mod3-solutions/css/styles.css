@@ -17,8 +17,10 @@
 		#title1 {
 			padding-top: 20px;
 			font-size: 30px;
+			color: white;
 		}
 		.dropdown-content {
+			color: white;
 			display: none;
 			list-style-type: none;
 			text-align: center;
@@ -81,7 +83,7 @@
 			margin: 10px 5px 10px 5px;
 		}
 		.row .container{
-		 	background-color: gray;
+		 	background-color: green;
 			margin: 10px;
 			padding: 0px;
 			border: 1px solid black; 
